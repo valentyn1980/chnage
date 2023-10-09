@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import "./globals.scss";
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import { Providers } from "./provider";
 
 export default function RootLayout({
   children,
@@ -13,11 +14,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/images/favicon-48x48.webp" />
       </head>
-      <body className=" min-h-screen flex flex-col">
-        <Header />
-        {children}
-        <Footer />
-      </body>
+      <Providers>
+        <body className=" min-h-screen flex flex-col">
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </Providers>
     </html>
   );
 }

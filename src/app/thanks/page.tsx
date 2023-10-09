@@ -3,7 +3,7 @@ import React from "react";
 
 const ThanksPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center mt-10 gap-y-20 py-40">
+    <div className="flex flex-col justify-center items-center mt-10 gap-y-20 py-40 text-center">
       <h1 className="text-5xl">СПАСИБО! МЫ ПОЛУЧИЛИ ВАШУ ЗАЯВКУ!</h1>
       <p className="text-2xl">
         В ближайшее время с вами свяжется наш специалист для уточнения деталей
