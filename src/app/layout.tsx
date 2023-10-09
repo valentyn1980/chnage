@@ -10,6 +10,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/favicon-48x48.webp" />
+      </head>
       <body className=" min-h-screen flex flex-col">
         <Header />
         {children}
