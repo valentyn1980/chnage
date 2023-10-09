@@ -197,7 +197,7 @@ const MainPageView = () => {
             ))}
           </ul>
           <p className="text-blue-500 mt-10 text-xl">Поддержать нашу борьбу.</p>
-          <div className="flex justify-between gap-x-2 mt-10 border-b-2 pb-4">
+          <div className="flex justify-between gap-x-2 mt-10 border-b-2 pb-4 items-center">
             <p>5 Comments</p>
             <div className="flex gap-x-2 items-center">
               <p>Sort by</p>
