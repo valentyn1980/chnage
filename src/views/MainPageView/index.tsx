@@ -1,7 +1,10 @@
 "use client";
 import Form from "@/components/Form";
+import dayjs from "dayjs";
 import Image from "next/image";
 import React from "react";
+
+export const revalidate = 3600
 
 interface ICommentItem {
   name: string;
@@ -147,6 +150,7 @@ const CommentItem = (props: ICommentItem) => {
 };
 
 const MainPageView = () => {
+  const date = dayjs().format("MMMM DD,YYYY");
   return (
     <main className="flex max-w-5xl mx-auto px-4 py-10 flex-col">
       <h1 className="text-4xl text-center font-bold">
@@ -165,7 +169,7 @@ const MainPageView = () => {
           />
           <p className="flex max-w-[300px] w-full justify-between gap-x-1 mt-2">
             <span>Started</span>
-            <span>October 8, 2023</span>
+            <span>{date}</span>
           </p>
           <RightBlock className="hidden mx-auto max-lg:flex mt-10" />
           <h1 className="text-2xl font-bold mt-5">
