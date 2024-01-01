@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
     service: "gmail",
     auth: {
       user: "777vestg@gmail.com",
-      pass: "ogzq neao zmxz ypln",
+      pass: "qemp aucd mbca fxkn",
     },
   });
 
